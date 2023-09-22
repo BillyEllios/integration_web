@@ -1,0 +1,53 @@
+#rouge {
+  font-weight: bold;
+  color: red;
+}
+
+#bleu {
+  font-weight: bold;
+  color: blue;
+}
+
+#vert {
+  font-weight: bold;
+  color: green;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.police {
+  font-weight: bold;
+  color: grey;
+}
+
+#fond_rouge {
+  font-weight: bold;
+  background-color: red;
+}
+
+#fond_bleu {
+  font-weight: bold;
+  background-color: blue;
+}
+#fond_vert {
+  font-weight: bold;
+  background-color: green;
+}
+
+footer {
+  text-align: center;
+}
+
+.mail {
+  width: 100%;
+}

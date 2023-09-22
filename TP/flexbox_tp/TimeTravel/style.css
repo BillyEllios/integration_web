@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p,
+li {
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: url(./images/pyramides.jpeg);
+  background-position: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+header nav > a {
+  color: white;
+}
+
+#destinations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#niagara {
+  width: 30%;
+  height: auto;
+}
+
+#destinations_text {
+  padding-right: 2%;
+  width: 60%;
+  padding-top: 2%;
+}
+
+#destinations_text > h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+li {
+  margin-top: 1%;
+}
+
+#form {
+  text-align: center;
+}
+
+#formules {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 1px solid darksalmon;
+  width: 32%;
+  text-align: center;
+}
+
+.box > hr {
+  width: 80%;
+}
+
+.montant {
+  font-size: 1.5rem;
+  color: darksalmon;
+  font-weight: bold;
+}
+
+.titre_form {
+  font-weight: bold;
+}
+
+#concept {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1%;
+}
+
+#grece {
+  width: 30%;
+  height: auto;
+}
+
+#concept_text {
+  padding-left: 2%;
+  width: 60%;
+  padding-top: 2%;
+}
+
+#concept_text > h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+button {
+  background-color: white;
+  border: 1px solid darksalmon;
+  font-weight: bold;
+  color: darksalmon;
+  padding: 1%;
+}
