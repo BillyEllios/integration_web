@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 1060px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background-image: url(./images/detoxcuresmoothie.jpg);
+  background-position-y: 60%;
+  background-size: 100%;
+}
+
+header > div > h1 {
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+#devise {
+  display: flex;
+}
