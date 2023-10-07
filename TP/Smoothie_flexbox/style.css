@@ -6,10 +6,7 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
-.container {
-  max-width: 1060px;
-}
-
+/* === Header section === */
 header {
   display: flex;
   justify-content: center;
@@ -20,11 +17,56 @@ header {
   background-size: 100%;
 }
 
+.container {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 header > div > h1 {
   color: white;
   letter-spacing: 0.5rem;
 }
 
-#devise {
+/* === Notre devise Section === */
+
+#sm_devise{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+img{
+  width: 80%;
+}
+
+#smoothie{
+  width: 30%;
+}
+
+#devise{
+  width: 70%;
+}
+
+#devise > h2 {
+  text-align: center;
+}
+
+/* === Méthode de fabrication section === */
+
+#fabrication{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+
+
+.logo{
+  width: 5%;
 }
