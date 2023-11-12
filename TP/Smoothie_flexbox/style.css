@@ -81,3 +81,19 @@ img{
 .container>h2 {
   text-align: center;
 }
+
+
+/* === Footer section === */
+
+footer {
+  height: 100px;
+  background-color: #F59E28; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+}
