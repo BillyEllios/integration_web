@@ -97,3 +97,28 @@ footer p {
   margin: 0;
   color: white;
 }
+
+
+/* === Responsive section === */
+/*=== Mobile section === */
+
+@media (max-width: 767px) {
+  header > div > h1 {
+    text-align: center;
+  }
+
+  #sm_devise{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .concept{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo{
+    width: 7%;
+  }
+}
