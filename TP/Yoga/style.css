@@ -1,14 +1,36 @@
+@import url("normalize.css");
+@import url("base.css");
 @import url('https://fonts.googleapis.com/css2?family=Mandali&family=Work+Sans:wght@400;700&display=swap');
 
-/* ============ Setup général de la page ============ */
-.container {
-    width: 1060px;
+
+/* ============ CSS GENERAL ============ */
+:root {
+    --main: #6e8e9b;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+    max-width: 1060px;
+    width: 90%;
     margin: auto;
 }
 
-.separation {}
+/* ============ CLASSES GLOBALES ============ */
+.btn {
+    color: var(--main) !important;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+.btn:hover{
+    background-color: var(--main);
+    color: white !important;
+    transform: translateY(-5px);
+}
 
-/* ============ Header Section ============ */
+/* ============ CSS PAR SECTION ============ */
+/* ============ Header section ============ */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/yogamat.jpg');
     background-position: center;
@@ -16,43 +38,26 @@ header {
     padding: 20px;
     color: white;
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-header nav img {
-    height: 50px;
-    width: auto;
-}
-
 header nav ul {
     display: flex;
+    gap: 30px;
 }
-
-header nav ul li {
-    margin-left: 20px;
-    color: white;
-}
-
-header h1 {
-    margin: 0;
-}
-
-.description_header{
-    display: flex;
-    flex-direction: column;
+header div.text{
     text-align: center;
-    align-items: center;
-    padding: 150px 0;
+    margin: 100px 0 120px;
 }
-
-.description_header button {
-    width: 12%;
-    padding: 1%;
-    border-radius: 50px;
-    border: none;
+header div.text h1 {
+    margin: 0;
+    font-family: "Mandali", sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 5px;
 }
 
 /* ============ Concept Section ============ */
@@ -76,4 +81,13 @@ header h1 {
     border-radius: 100%;
     padding: 20%;
     border: 1px solid black;
+}
+
+
+/* ============ MEDIA QUERIES ============ */
+/* ============ MOBILE ============ */
+@media (max-width: 768px) {
+    header div.text h1 {
+        font-size :3.5rem;
+    }
 }
