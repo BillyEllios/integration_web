@@ -1,0 +1,53 @@
+/* ============ Setup général de la page ============ */
+.container {
+    width: 1060px;
+    margin: auto;
+}
+
+/* ============ Header Section ============ */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/yogamat.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav img {
+    height: 50px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.description_header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+.description_header button {
+    width: 12%;
+    padding: 1%;
+    border-radius: 50px;
+    border: none;
+}
+
