@@ -13,6 +13,20 @@ body{
     width: 90%;
     margin: auto;
 }
+h2{
+    position: relative;
+    margin-bottom: 70px;
+}
+h2::after{
+    display: inline-block;
+    content:"";
+    width: 3px;
+    height: 50px;
+    background-color: var(--main);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
 
 /* ============ CLASSES GLOBALES ============ */
 .btn {
@@ -64,30 +78,50 @@ header div.text h1 {
 .concept_right {
     display: flex;
 }
-
 .concept_left{
     display: flex;
 }
-
 .center_logo {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
 }
-
 .logo {
     width: 100%;
     background-color: white;
     border-radius: 100%;
     padding: 20%;
-    border: 1px solid black;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
+/* ============ Cours Section ============ */
+.cours_container {
+    display: flex;
+}
+
+.cours_img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    object-fit: contain;
+}
 
 /* ============ MEDIA QUERIES ============ */
 /* ============ MOBILE ============ */
 @media (max-width: 768px) {
     header div.text h1 {
         font-size :3.5rem;
+    }
+    .concept_right {
+        display: flex; 
+        flex-direction: column-reverse;
+        align-items: center;   
+        text-align: center;   
+    }
+    .concept_left {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;   
     }
 }
