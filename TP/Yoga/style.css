@@ -6,6 +6,7 @@
 /* ============ CSS GENERAL ============ */
 :root {
     --main: #6e8e9b;
+    --shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 body{
     font-family: "Work Sans", sans-serif;
@@ -14,18 +15,16 @@ body{
     margin: auto;
 }
 h2{
-    position: relative;
-    margin-bottom: 70px;
+    color: var(--main);
+   font-family: "Mandali", sans-serif;
 }
 h2::after{
-    display: inline-block;
     content:"";
+    display: block;
     width: 3px;
-    height: 50px;
+    height: 40px;
+    margin-top: 20px;
     background-color: var(--main);
-    position: absolute;
-    top: 50px;
-    left: 0px;
 }
 
 /* ============ CLASSES GLOBALES ============ */
@@ -34,7 +33,7 @@ h2::after{
     background-color: white;
     padding: 8px 15px;
     border-radius: 50px;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow);
     display: inline-block;
 }
 .btn:hover{
@@ -75,35 +74,41 @@ header div.text h1 {
 }
 
 /* ============ Concept Section ============ */
-.concept_right {
+#concept article {
     display: flex;
+    align-items: center;
 }
-.concept_left{
-    display: flex;
+/* ordi uniquement */
+@media (min-width: 992px) {
+    #concept article:nth-of-type(odd){
+        flex-direction: row-reverse;
+    }
 }
-.center_logo {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-}
-.logo {
-    width: 100%;
-    background-color: white;
-    border-radius: 100%;
-    padding: 20%;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+#concept article img{
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    height: 80px;
+    margin: 20px;
 }
 
 /* ============ Cours Section ============ */
-.cours_container {
+#cours article {
     display: flex;
+    align-items: center;
 }
 
 .cours_img{
-    width: 150px;
-    height: 150px;
-    border: 1px solid black;
-    object-fit: contain;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============ Contact Section ============ */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 /* ============ MEDIA QUERIES ============ */
@@ -112,16 +117,12 @@ header div.text h1 {
     header div.text h1 {
         font-size :3.5rem;
     }
-    .concept_right {
-        display: flex; 
-        flex-direction: column-reverse;
-        align-items: center;   
-        text-align: center;   
-    }
-    .concept_left {
-        display: flex; 
+    #concept article {
         flex-direction: column;
-        align-items: center; 
-        text-align: center;   
+        text-align: center;
+    }
+    #cours article{
+        flex-direction: column;
+        text-align: center;
     }
 }
