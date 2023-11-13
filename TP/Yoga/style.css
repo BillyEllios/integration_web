@@ -26,6 +26,11 @@ h2::after{
     margin-top: 20px;
     background-color: var(--main);
 }
+select:before{
+    display: inline-block;
+    content: "Blabla";
+    color: aquamarine;
+}
 
 /* ============ CLASSES GLOBALES ============ */
 .btn {
@@ -133,6 +138,7 @@ header div.text h1 {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-bottom: 15px;
   }
   .fin_form input{
     margin: 10px 0 10px 0;
