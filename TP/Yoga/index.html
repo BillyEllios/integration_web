@@ -86,28 +86,32 @@
         <!-- Section Contact -->
         <section>
             <h2>Contact - Suivre un cours</h2>
-            <div class="contact_container">
+            <article class="contact_container">
                 <form action="">
-                    <div>
-                        <span>
-                            Etre rappelé : 
-                            <a href="" class="btn">Aujourd'hui</a>
-                            <a href="" class="btn">Demain</a>
-                            <a href="" class="btn">Plus tard</a>
-                        </span>
-                        <input type="text">Nom prénom</input>
-                        <input type="text">Email</input>
-                        <span>
-                            Vous êtes intéressé par :
-                            <select name="choix" id="choix_selected">
-                                <option value="">Quelque chose</option>
-                            </select>
-                        </span>
+                    <div class="radio-toolbar">
+                        <span>Etre rappelé :</span>
+                        <input type="radio" id="Aujourd'hui" name="selection" value="Aujourd'hui">
+                        <label for="Aujourd'hui">Aujourd'hui</label>
+                        <input type="radio" id="Demain" name="selection" value="Demain">
+                        <label for="Demain">Demain</label>
+                        <input type="radio" id="Plus tard" name="selection" value="Plus tard">
+                        <label for="Plus tard">Plus tard</label>
+                    </div>
+                    <div class="fin_form">
+                        <input class="btn" type="text" value="Nom prénom"></input>
+                        <input class="btn" type="text" value="Email"></input>   
+                        <select name="choix" id="choix_selected" value="Vous êtes intéressé par :">
+                            <option value="">Quelque chose</option>
+                        </select>
                     </div>
                 </form>
-            </div>
+            </article>
         </section>
     </main>
+
+    <footer>
+        <p>2019 AH</p>
+    </footer>
   
 </body>
 </html>
