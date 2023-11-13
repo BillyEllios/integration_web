@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Mandali&family=Work+Sans:wght@400;700&display=swap');
+
 /* ============ Setup général de la page ============ */
 .container {
     width: 1060px;
     margin: auto;
 }
+
+.separation {}
 
 /* ============ Header Section ============ */
 header {
@@ -51,3 +55,25 @@ header h1 {
     border: none;
 }
 
+/* ============ Concept Section ============ */
+.concept_right {
+    display: flex;
+}
+
+.concept_left{
+    display: flex;
+}
+
+.center_logo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20%;
+    border: 1px solid black;
+}
